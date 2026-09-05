@@ -7,7 +7,7 @@ const ApiError = require("../../utils/ApiError");
 const ApiResponse = require("../../utils/ApiResponse");
 const asyncHandler = require("../../utils/asyncHandler");
 const validatePayload = require("../../utils/validatePayload");
-const { adminLoginValidator } = require("../../validations/adminAuthValidator");
+const { adminLoginValidator } = require("../../validators/adminAuthValidator");
 
 // Admin login
 const adminLogin = asyncHandler(async (request, response) => {

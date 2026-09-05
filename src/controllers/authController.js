@@ -9,7 +9,7 @@ const asyncHandler = require("../utils/asyncHandler");
 const generateCode = require("../utils/generateCode");
 const validatePayload = require("../utils/validatePayload");
 const { userSignupValidator, userLoginValidator, verifyOtpValidator, resendOtpValidator, 
-forgotPasswordValidator, verifyPasswordResetTokenValidator, resetPasswordValidator } = require("../validations/userAuth");
+forgotPasswordValidator, verifyPasswordResetTokenValidator, resetPasswordValidator } = require("../validators/userAuth");
 const { setCache, getCache, deleteCache } = require("../redis/redisHelpers");
 const { getOTPKey, getResetPasswordKey } = require("../utils/redisKeys");
 const emailQueue = require("../queues/emailQueue");
